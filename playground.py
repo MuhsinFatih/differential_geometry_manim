@@ -407,7 +407,7 @@ class saddlepatch(ThreeDScene):
 		sexySurfaceAnimation = False
 
 		Φ = 60
-		Θ = -30
+		Θ = 180-15
 
 		text_Φ = TextMobject(f"$\\phi={Φ}$").to_corner(UL)
 		text_Θ = TextMobject(f"$\\theta={Θ}$").next_to(text_Φ, DOWN)
