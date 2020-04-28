@@ -1,0 +1,3 @@
+file '/tmp/input/videos/playground/720p30/partial_movie_files/saddlepatch/00007.mp4'
+file '/tmp/input/videos/playground/720p30/partial_movie_files/saddlepatch/00008.mp4'
+file '/tmp/input/videos/playground/720p30/partial_movie_files/saddlepatch/00009.mp4'
