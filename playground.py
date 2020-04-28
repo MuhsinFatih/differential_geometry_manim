@@ -402,19 +402,21 @@ class saddlepatch(ThreeDScene):
 	def construct(self):
 
 		# quick settings:
-		ambientMovement = False
+		ambientMovement = True
 		ambientMovementSpeed = .3
-		sexySurfaceAnimation = False
+		sexySurfaceAnimation = True
+		writeAngles = False
 
-		Φ = 60
-		Θ = 180-15
+		Φ = 45
+		Θ = -45
 
-		text_Φ = TextMobject(f"$\\phi={Φ}$").to_corner(UL)
-		text_Θ = TextMobject(f"$\\theta={Θ}$").next_to(text_Φ, DOWN)
-		self.add_fixed_in_frame_mobjects(text_Φ)
-		self.add_fixed_in_frame_mobjects(text_Θ)
-		
-		self.play(Write(text_Φ), Write(text_Θ))
+		if writeAngles:
+			text_Φ = TextMobject(f"$\\phi={Φ}$").to_corner(UL)
+			text_Θ = TextMobject(f"$\\theta={Θ}$").next_to(text_Φ, DOWN)
+			self.add_fixed_in_frame_mobjects(text_Φ)
+			self.add_fixed_in_frame_mobjects(text_Θ)
+			
+			self.play(Write(text_Φ), Write(text_Θ))
 
 		TipableVMobject.position_tip = position_tip
 		# self.set_camera_orientation(0.6, -PI*0.8, 100)
